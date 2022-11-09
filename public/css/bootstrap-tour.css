@@ -1,0 +1,173 @@
+﻿/* ========================================================================
+ * bootstrap-tour - v0.10.1
+ * http://bootstraptour.com
+ * ========================================================================
+ * Copyright 2012-2013 Ulrich Sossou
+ *
+ * ========================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================================
+ */
+
+.tour-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.tour-step-backdrop {
+  position: relative;
+  z-index: 1101;
+  background: inherit;
+}
+.tour-step-backdrop > td {
+  position: relative;
+  z-index: 1101;
+}
+.tour-step-background {
+  position: absolute !important;
+  z-index: 1100;
+  border-radius: 6px;
+}
+.popover[class*="tour-"] {
+  z-index: 1100;
+}
+.popover[class*="tour-"] .popover-navigation {
+  padding: 9px 14px;
+}
+.popover[class*="tour-"] .popover-navigation *[data-role="end"] {
+  float: right;
+}
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"],
+.popover[class*="tour-"] .popover-navigation *[data-role="next"],
+.popover[class*="tour-"] .popover-navigation *[data-role="end"] {
+  cursor: pointer;
+}
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled,
+.popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled,
+.popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
+  cursor: default;
+}
+.popover[class*="tour-"].orphan {
+  position: fixed;
+  margin-top: 0;
+}
+.popover[class*="tour-"].orphan .arrow {
+  display: none;
+}
+
+
+
+
+.popover {
+  max-width: 276px;
+  min-width:200px;
+  border:1px solid #ccc; 
+  border-radius: 3px;
+  webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+  background-clip: padding-box;
+}
+
+.popover-title {
+  margin: 0;
+  line-height: 18px;
+  background-color: #fff;
+  border-bottom: 0px solid #ebebeb;
+  border-radius: 3px 3px 0 0;
+  color: #0075c9;
+  font-family: 'open_sanslight', helvetica, arial;
+  font-weight: normal;
+  font-size: 20px;
+  border: none;
+  margin: 0;
+  padding: 25px 20px 5px 20px;
+  width: auto;
+
+}
+
+
+
+.popover-content {
+  padding: 4px 20px;
+    margin: 0;
+  font-size: 12px;
+  color: #2c2c2c;
+ 
+}
+
+
+.nextbtn{
+
+  background-image: url("../img/nextPage.png");
+  text-indent:-9999999px;
+  width:25px!important
+;
+}
+.prevbtn{
+
+  background-image: url("../img/prevPage.png");
+  text-indent:-9999999px;
+
+}
+
+
+
+
+.endbtn{
+	  margin-bottom: 20px;
+	  margin-top:10px;
+	  margin-right:10px;
+  padding: 4px 10px!important;
+  font-family: 'open_sansregular'!important;
+  display: block!important;
+  background-color: #0075c9!important;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  border: none;
+  border-radius: 2px;
+  color: #fff !important;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  float:right;
+}
+
+
+.popverLinks{
+margin: 5px 20px;
+	
+}
+
+.nextbtn, .prevbtn{
+border: none!important;
+  display: block;
+  height: 25px;
+  min-width: 25px;
+  padding: 0!important;
+  background-color: #e5e5e5!important;
+  background-position: center center!important;
+  background-repeat: no-repeat!important;
+  margin:2px!important;
+}
+
+
+

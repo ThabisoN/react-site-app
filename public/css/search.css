@@ -1,0 +1,458 @@
+﻿/*==========================================================================
+  SHAREPOINT SEARCH RESULTS LAYOUT
+  ========================================================================== */
+
+	
+/*people search*/
+.ms-peopleux-userImg {
+  position: absolute;
+  left: 0px;
+  min-height: 50px!important;
+  min-width: 50px!important;
+  border-radius: 50%;
+  clip: rect(0px, 52px, 52px, 0px)!important;
+  max-width: 50px!important;
+}
+
+.ms-srch-people-outerContainer {
+ min-height: 300px;
+ padding: 15px;
+ padding-left: 10px;
+ float: left;
+ clear: none;
+ margin-right:15px;
+}
+.ms-srch-hover-standardSize {
+ width: 300px;
+ left: -300px;
+}
+
+.ms-srch-people-item #UserInfoContainer {
+  float: right;
+  width: 145px;;
+  overflow: hidden;
+  margin-left: 12px;
+  height:200px;
+}
+
+.ms-srch-people-item .MoreInfoShort{
+	display:none;
+}
+
+.ms-textLarge {
+	    font-family: 'open_sanslight', helvetica, arial;
+  font-size: 18px;
+}
+
+.ms-srch-people-item #UserPersonaContainer {
+  width: 60px;
+  }
+  
+.ms-srch-people-item #UserPersona {
+  height: 54px;
+  overflow: hidden;
+}  
+
+  .ms-srch-hover-outerContainer {
+        display: none !important; /*force override of mobile first hide*/
+        top: 0px !important; /*force override of top*/
+        left:600px !important; /*This property may need changing depending on width of item*/
+    }
+.ms-srch-people-item #SelfSearchInfo #Heading {
+  float: left;
+  display: none;
+}
+.ms-srch-people-item #ContactInfo #JobTitleField {
+  padding-top: 4px;
+  font-size: 12px;
+}
+.ms-srch-people-item #ContactInfo #DepartmentField {
+  padding-top: 2px;
+  font-size: 12px;
+}
+
+.ms-srch-item:hover,.ms-srch-resultHover:hover,.edisc-SearchResultItemContainer:hover
+{
+background-color:rgba( 0,0,0,0.1 );
+}
+
+
+.ms-srch-people-item #SelfSearchInfo #Frequency {
+  float: left;
+  display: none;
+  width: 215px;
+  clear: both;
+  font-size:10px;
+} 
+
+
+.ms-srch-people-item-separator {
+	display:none;
+}
+  
+.ms-srch-people-item {
+  clear: both;
+  width: 100%;
+  padding: 5px 20px 0px 0px;
+  min-height: 74px;
+  overflow: hidden;
+}
+
+.ms-srch-people-outerContainer {
+  min-height: 1px;
+  width: 220px!important;
+    position: relative;
+    margin:5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0, 0.4);
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.4);
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  transition: box-shadow 200ms;
+}
+
+
+	#searchResultsLayout.row { padding-top: 20px; }
+
+
+
+/* input field */
+	.ms-srch-sb > input[type="text"] {
+	margin: -1px!important;
+	padding: 11px 16px!important;
+	width: 180px!important;
+  height: 16px!important;
+  border-radius: 2px 0 0 2px;
+  float: left;
+  background: #e2e4e5;
+  text-indent: 0px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0, 0);
+  -moz-box-shadow: inset 0 1px 3px rgba(0,0,0, 0);
+  box-shadow: inset 0 1px 3px rgba(0,0,0, 0);
+
+	}
+	
+	
+/* submit btn */
+	.ms-srch-sb-searchLink {
+		width: 48px;
+		height: 40px;
+		background: #0075C9 url('../img/search1.png' ) no-repeat center center;  
+		border-radius: 0 2px 2px 0;
+	}
+
+	/* SEARCH RESULTS */
+		
+	
+	#s4-bodyContainer .ms-srch-item {
+  width: 100% !important;
+  position: relative;
+  overflow: visible;
+  margin:15px 5px;
+  float:none!important;
+}
+
+	.ms-srch-item:hover {
+		background-color: transparent;
+	}
+	
+	/* result title */
+	h3.ms-srch-ellipsis {
+		margin: 0;
+		color: #0075C9;
+		font-family: 'open_sanslight', helvetica, arial;
+		font-weight: normal;
+	    font-size: 25px; 
+	    white-space:normal!important
+	}
+	.ms-srch-item-icon {display: none;}
+	/* langauge selector */
+	#ResultHeader {
+		display: none;
+	}
+	
+	/* result description */
+	.ms-srch-item-path {
+		width: 100%;
+		margin: 2px 0 0;
+	    padding: 0;
+	    color: #7A7A7A;
+	}
+	
+	/* result pagination */
+	#Paging {
+		margin-bottom: 0;	
+	}
+
+	#Paging li {
+		width: 24px;
+		height: 25px;
+		margin: 0 8px 10px 0;
+		display: inline-block!important;
+		*display: inline;
+		*zoom: 1;
+		vertical-align: bottom;
+	}
+	#Paging li a {
+		padding: 3px 0 0!important;
+		display: block;
+		height: 22px;
+		margin: 0;
+		background-color: #e5e5e5;
+		border-radius: 2px;
+		font-size: 13px;
+	}
+	/* prev & next btn */
+	#Paging li a.ms-promlink-button {
+		border: none;
+	    display: block;
+	   	height: 25px;
+	    width: auto;
+	    padding: 0;
+	    background-color: #e5e5e5;
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	}
+	#PageLinkPrev {background-image: url("../img/prevPage.png" );}
+	#PageLinkNext {background-image: url("../img/nextPage.png" );}
+		
+	#Paging li a .ms-promlink-button-image {
+		display: none;
+	}
+	#Paging li#PagingSelf a {
+		background-color: #0075C9;
+    	color: #fff;
+    	font-weight: normal;
+    	/*padding: 2px 0 0 0;*/
+    }
+    #PagingLink a {
+	    padding: 0;
+	    top: 0;
+	}	
+	.ms-srch-ellipsis {
+	    overflow: none;
+	    white-space: normal;
+	}
+	/* remove additional links from bottom */
+	.ms-srch-resultFooter {
+		display: none;
+	}/* SEARCH RESULTS */
+	,
+	 {
+		float: left;
+		width: 65.824561403508774% !important; /* col2 */
+	}
+	/* langauge selector */
+	 #ResultHeader,
+	 #ResultHeader {
+		display: none;
+	}
+	/* remove language selector */
+	#UpScopeLinkTop {display: none !important;}
+		
+	/* result item */
+	 .ms-srch-item,
+	 .ms-srch-item {
+		width: 100%;
+	    margin: 0 0 40px 0;
+	    padding: 0;
+	}
+	 .ms-srch-item:hover,
+	 .ms-srch-item:hover {
+		background-color: transparent;
+	}
+	
+	/* result title */
+	 h3.ms-srch-ellipsis,
+	 h3.ms-srch-ellipsis {
+		margin: 0;
+		color: #0075C9;
+		font-family: 'open_sanslight', helvetica, arial;
+		font-weight: normal;
+	    font-size: 25px; 
+	}
+	
+	/* result description */
+	 .ms-srch-item-path,
+	 .ms-srch-item-path {
+		width: 200px;
+		height:20px;
+		margin: 2px 0 0;
+	    padding: 0;
+	    color: #7A7A7A;
+	     display: inline-block;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  line-height: 10px;
+	  text-overflow: ellipsis;
+	}
+	
+	/* result pagination */
+	 #Paging,
+	 #Paging {
+		margin-bottom: 0;	
+	}
+
+	 #Paging li,
+	 #Paging li {
+		width: 24px;
+		height: 25px;
+		margin: 0 8px 10px 0;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		vertical-align: bottom;
+				text-align:center;
+
+	}
+	 #Paging li a,
+	 #Paging li a {
+		padding: 3px 0 0;
+		display: block;
+		height: 22px;
+		margin: 0;
+		background-color: #e5e5e5;
+		border-radius: 2px;
+		font-size: 13px;
+	}
+	/* prev & next btn */
+	 #Paging li a.ms-promlink-button,
+	 #Paging li a.ms-promlink-button {
+		border: none;
+	    display: block;
+	   	height: 25px;
+	    width: auto;
+	    padding: 0!important;
+	    background-color: #e5e5e5;
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    margin-top:1px;
+	}
+	 #PageLinkPrev, 
+	 #PageLinkPrev {
+		background-image: url("../img/prevPage.png" );
+	}
+	 #PageLinkNext,
+	 #PageLinkNext {
+		background-image: url("../img/nextPage.png" );
+	}
+
+	 #Paging li a .ms-promlink-button-image,
+	 #Paging li a .ms-promlink-button-image {
+		display: none;
+	}
+	 #Paging li#PagingSelf a,
+	 #Paging li#PagingSelf a {
+		background-color: #0075C9;
+    	color: #fff;
+    	font-weight: normal;
+    	/*padding: 2px 0 0 0;*/
+    }
+     #PagingLink a,
+     #PagingLink a {
+	    padding: 0;
+	    top: 0;
+	}	
+	#mediaCentreLayout .ms-srch-ellipsis {
+	    overflow: none;
+	    white-space: normal;
+	}
+	/* remove additional links from bottom */
+	#mediaCentreLayout .ms-srch-resultFooter {
+		display: none;
+	}
+	
+#searchIcon{
+	display:none;
+}	
+	
+	
+
+
+.ms-ref-refiner #Container {
+  padding: 0;
+  padding-bottom: 7px!important;}
+
+.ms-srch-sb-border {
+  border: none !important;
+}
+
+
+
+
+.ms-searchCenter-refinement {
+  margin-top:0px;
+}
+
+.ms-srch-sbLarge > .ms-srch-sb-searchLink > img { display:none;}
+.ms-srch-sbLarge input{
+	max-width:350px;
+}	
+	
+.ms-srchnav-list{ list-style:none; width:100%; padding:0; font-size:18px; font-family: 'open_sanslight', helvetica, arial; margin:0 0 15px 0 ; }
+.ms-srchnav-list li{ margin: 0 0 0 30px; padding: 0 0 4px 0; color: #999898; outline: none; display:inline-block; }
+.ms-srchnav-list li:first-child{ margin:0;
+}
+.ms-srchnav-link-selected:link, .ms-srchnav-link-selected:visited  {
+border-bottom: 1px solid #0075c9;
+  color: #303030!important; padding-bottom:4px;}
+.ms-srchnav-list li a{ color:#A1AFAC!important; font-size:18px!important; }
+.ms-srchnav-list li a:hover{
+color:#0075c9!important;
+
+}
+
+#SearchBox {
+  margin-top: 20px;
+}
+
+.ms-srch-result-groups {
+  margin-top: 45px;
+  float:none;
+}
+
+.ms-searchCenter-result-main {
+  float:none!important;
+}	
+
+.ms-ref-refinername:link, .ms-ref-refinername:visited {
+   width: 100%;
+ }
+ 
+ 
+/*overwrites the prensece lync status imag*/
+.ms-spimn-img img{
+	max-width:none!important;}
+
+.ms-peopleux-userImgDiv .img{
+	max-width:none!important;
+}
+
+.ms-spimn-imgSize-8x72 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.ms-spimn-presence-disconnected-8x72x32 {
+  left: -112px;
+  top: -2px;
+}
+
+.ms-detailsview{
+border:1px solid #eeeeee;
+text-align:left;
+} 
+
+
+.ms-srch-people-item #MoreInfoShort {
+  clear: both;
+  overflow: hidden;
+  padding-top: 4px;
+  display:none;
+}
+ 
+	
+	

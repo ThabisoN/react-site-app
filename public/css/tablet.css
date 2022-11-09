@@ -1,0 +1,64 @@
+﻿
+
+.showontablet{
+	display:none!important;
+}
+
+.carousel-caption{
+    right: 30%!important;
+
+}
+
+.carousel-caption p {
+  font-size: 12px!important;
+}
+
+.carousel-caption h1 { color:#fff; font-family:'open_sansbold'!important;
+ 		font-size:18px!important;}
+
+
+.carousel-inner > .item > img {
+   min-width: 100%!important;
+   min-height:150px!important; /* <--- Change this line to min-height */
+ }
+ 
+ 
+.carousel {
+  position: relative;
+  margin-bottom:20px;
+  
+}
+
+
+.carousel-inner > .item  {
+    padding:0px!important;   
+     height: 150px!important;
+      overflow: hidden;
+
+ }
+
+
+.notiFilters {
+  font-size: 14px!important;
+  display:block!important;
+}
+
+
+
+.tools
+{
+position:fixed!important;
+top:40px;
+right:50px;
+z-index:99999;}
+
+
+
+.sml-logo a{
+margin:10px 25px;
+}
+
+
+
+
+
