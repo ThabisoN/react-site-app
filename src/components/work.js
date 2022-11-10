@@ -101,7 +101,7 @@ export class Work extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                                <div className="project" style="background-image:url(images/ximg-6.jpg.pagespeed.ic.HU5u8fOMyE.webp)">
+                                <div className="project" style={{ backgroundImage: 'url(images/ximg-6.jpg.pagespeed.ic.HU5u8fOMyE.webp)'}}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 06</a></h3>
