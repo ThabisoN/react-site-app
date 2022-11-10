@@ -60,7 +60,7 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </li>
-                                <li style={{ backgroundImage: "url(images/img_bg_2.jpg)", width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} >
+                                <li style={{ backgroundImage: "url(images/img_bg_2.jpg)", width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} className="flex-active-slideS" >
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">
