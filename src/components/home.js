@@ -60,7 +60,7 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </li>
-                                <li style={{ backgroundImage: 'url(images/img_bg_2.jpg); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display:block; z-index:1' }} >
+                                <li style={{ backgroundImage: "url(images/img_bg_2.jpg)", width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} >
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">
