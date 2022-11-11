@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import image from "../images/img-1.
 
 export class Work extends Component {
     render() {
