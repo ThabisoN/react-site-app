@@ -15,7 +15,7 @@ export class Blog extends Component {
                         <div className="row">
                             <div className="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
                                 <div className="blog-entry">
-                                    <a href="blog.html" style={{ backgroundImage: 'url(images/img_bg_1.jpg)' }} className="blog-img">
+                                    <a href="blog.html" src='images/img_bg_1.jpg' className="blog-img">
                                         </a>
                                     <div className="desc">
                                         <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i className="icon-bubble3"></i> 4</small></span>

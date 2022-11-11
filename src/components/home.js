@@ -6,7 +6,9 @@ export class Home extends Component {
             <div>
                 <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
                     <div className="text-center">
-                        <div className="author-img" style={{ backgroundImage: 'url(images/Thabiso.png)' }}></div>
+                        <div className="author-img">
+                        <img src="./images/Thabiso.png"/>
+                        </div>
                         <h1 id="colorlib-logo"><a href="index.html">Thabiso Ntoi</a></h1>
                         <span className="position"><a href="#">Software Engineer</a> in South Africa</span>
                     </div>
@@ -60,7 +62,8 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </li>
-                                <li style={{ backgroundImage: "url(images/img_bg_2.jpg)", width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} className="flex-active-slideS" >
+                                <li style={{ width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} className="flex-active-slideS" >
+                                    <img src='images/img_bg_2.jpg'/>
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">

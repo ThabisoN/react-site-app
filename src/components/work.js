@@ -26,7 +26,7 @@ export class Work extends Component {
                         </div>
                         <div className="row">
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div className="project" style={{ backgroundImage: 'url(images/img_bg_1.jpg)' }}>
+                                <div className="project" style={{ backgroundImage: `url("images/img_bg_1.jpg")` }}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 01</a></h3>
