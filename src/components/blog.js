@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import  image  from '../images/blog-1.jpg';
+import  imag  from '../images/blog-2.jpg';
+import  img  from '../images/blog-3.jpg';
 
 export class Blog extends Component {
     render() {
@@ -14,8 +17,8 @@ export class Blog extends Component {
                         </div>
                         <div className="row">
                             <div className="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div className="blog-entry">
-                                    <a href="blog.html" src='images/img_bg_1.jpg' className="blog-img">
+                                <div className="blog-entry" style={{ backgroundImage: `url(${image})`}} >
+                                    <a href="blog.html" className="blog-img" style={{ backgroundImage: `url(${image})`}}>
                                         </a>
                                     <div className="desc">
                                         <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i className="icon-bubble3"></i> 4</small></span>
@@ -25,8 +28,9 @@ export class Blog extends Component {
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-                                <div class="blog-entry">
-                                    <a href="blog.html" className="blog-img"><img src="images/xblog-2.jpg.pagespeed.ic.U7ixVyFoCL.webp" className="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com" /></a>
+                                <div class="blog-entry img-responsive" alt="HTML5 Bootstrap Template by colorlib.com" style={{ backgroundImage: `url(${imag})`}}>
+                                    <a href="blog.html" className="blog-img">
+                                        </a>
                                     <div className="desc">
                                         <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
                                         <h3><a href="blog.html">Wordpress for a Beginner</a></h3>
@@ -34,9 +38,11 @@ export class Blog extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div className="col-md-4 col-sm-6 animate-box img-responsive"  style={{ backgroundImage: `url(${img})`}} alt="HTML5 Bootstrap Template by colorlib.com"  data-animate-effect="fadeInLeft">
                                 <div className="blog-entry">
-                                    <a href="blog.html" className="blog-img"><img src="images/xblog-3.jpg.pagespeed.ic.3C_w-UtGyn.webp" className="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com" /></a>
+                                    <a href="blog.html" className="blog-img">
+                                        
+                                        </a>
                                     <div className="desc">
                                         <span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i className="icon-bubble3"></i> 4</small></span>
                                         <h3><a href="blog.html">Make website from scratch</a></h3>

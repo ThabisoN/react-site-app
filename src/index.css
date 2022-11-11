@@ -635,6 +635,20 @@ h6 {
   transition: 0.3s;
 }
 
+.blog-entry .desc h3 {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: auto;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+.blog-entry .desc h3 a {
+  color: #000;
+  text-decoration: none;
+}
 .btn.btn-lg {
   padding: 18px 36px !important;
 }

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-
+import  image  from '../images/TP.jpg';
+import  img  from '../images/Thabiso.png';
 export class Home extends Component {
     render() {
         return (
             <div>
                 <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
                     <div className="text-center">
-                        <div className="author-img">
-                        <img src="./images/Thabiso.png"/>
-                        </div>
+                        <div className="author-img" style={{ backgroundImage: `url(${image})` }} ></div>
                         <h1 id="colorlib-logo"><a href="index.html">Thabiso Ntoi</a></h1>
                         <span className="position"><a href="#">Software Engineer</a> in South Africa</span>
                     </div>
@@ -46,7 +45,7 @@ export class Home extends Component {
                     <section id="colorlib-hero" className="js-fullheight" data-section="home" >
                         <div className="flexslider js-fullheight">
                             <ul className="slides">
-                                <li style={{ backgroundImage: 'url(images/Thabiso.png)' }}>
+                                <li style={{ backgroundImage: `url(${img})` }} >
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">
@@ -62,8 +61,8 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </li>
-                                <li style={{ width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} className="flex-active-slideS" >
-                                    <img src='images/img_bg_2.jpg'/>
+                                <li style={{ backgroundImage: `url(${img})`, width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} className="flex-active-slide" >
+                                    
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">

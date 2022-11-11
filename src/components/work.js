@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import image from "../images/img-1.
-
+import Image from '../images/img-1.jpg';
+import Imag from '../images/img-2.jpg';
+import Img from '../images/img-3.jpg';
+import Imgs from '../images/img-4.jpg';
+import Ims from '../images/img-5.jpg';
+import Igs from '../images/img-6.jpg';
 export class Work extends Component {
     render() {
         return (
@@ -27,7 +31,7 @@ export class Work extends Component {
                         </div>
                         <div className="row">
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div className="project" style={{ backgroundImage: `url("images/img_bg_1.jpg")` }}>
+                                <div className="project" style={{ backgroundImage: `url(${Image})` }}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 01</a></h3>
@@ -42,7 +46,7 @@ export class Work extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                                <div className="project" style={{ backgroundImage: 'url(images/img_bg_1.jpg)' }}>
+                                <div className="project" style={{ backgroundImage: `url(${Img})`  }}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 02</a></h3>
@@ -57,7 +61,7 @@ export class Work extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInTop">
-                                <div className="project" style={{ backgroundImage: 'url(images/img_bg_1.jpg)' }}>
+                                <div className="project" style={{ backgroundImage: `url(${Imag})`  }}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 03</a></h3>
@@ -72,7 +76,7 @@ export class Work extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-                                <div className="project" style={{ backgroundImage: 'url(images/img_bg_1.jpg)' }}>
+                                <div className="project" style={{ backgroundImage: `url(${Imgs})` }}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 04</a></h3>
@@ -87,7 +91,7 @@ export class Work extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div className="project" style={{ backgroundImage: 'url(images/img_bg_1.jpg)' }}>
+                                <div className="project" style={{ backgroundImage: `url(${Ims})` }}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 05</a></h3>
@@ -102,7 +106,7 @@ export class Work extends Component {
                                 </div>
                             </div>
                             <div className="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                                <div className="project" style={{ backgroundImage: 'url(images/ximg-6.jpg.pagespeed.ic.HU5u8fOMyE.webp)'}}>
+                                <div className="project" style={{ backgroundImage: `url(${Igs})`}}>
                                     <div className="desc">
                                         <div className="con">
                                             <h3><a href="work.html">Work 06</a></h3>
