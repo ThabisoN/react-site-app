@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import  image  from '../images/TP.jpg';
-import  img  from '../images/Thabiso.png';
-import  imgs  from '../images/img_bg_1.jpg';
+import image from '../images/TP.jpg';
+import img from '../images/Thabiso.png';
+import imgs from '../images/img_bg_1.jpg';
+import jQuery from 'jquery'; // jQuery import
 export class Home extends Component {
     render() {
         return (
@@ -12,7 +13,7 @@ export class Home extends Component {
                         <h1 id="colorlib-logo"><a href="index.html">Thabiso Ntoi</a></h1>
                         <span className="position"><a href="#">Software Engineer</a> in South Africa</span>
                     </div>
-                    <nav id="colorlib-main-menu" role="Navigation"className="navbar">
+                    <nav id="colorlib-main-menu" role="Navigation" className="navbar">
                         <div id="navbar" className="collapse">
                             <ul></ul>
                             <li class="active">
@@ -25,7 +26,7 @@ export class Home extends Component {
                                 <a href="#" data-nav-section="home">Work</a>
                                 <a href="#" data-nav-section="home">Blog</a>
                                 <a href="#" data-nav-section="home">Contact</a>
-                              </li>
+                            </li>
 
                         </div>
                     </nav>
@@ -46,9 +47,9 @@ export class Home extends Component {
                     <section id="colorlib-hero" className="js-fullheight" data-section="home" >
                         <div className="flexslider js-fullheight">
                             <ul className="slides">
-                                <li style={{ backgroundImage: `url(${img})` }} Id="background-image" >
+                                <li style={{ backgroundImage: `url(${img})`, }} Id="background-image" >
                                     <div className="overlay"></div>
-                                    <div className="container-fluid">
+                                    <div className="container-fluid" >
                                         <div className="row">
                                             <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                                                 <div className="slider-text-inner js-fullheight" style={{ height: '274px' }}>
@@ -62,25 +63,9 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </li>
-                                <li style={{ backgroundImage: `url(${imgs})`}} Id="background-image" className="flex-active-slide" >
-               
-                                    <div className="overlay"></div>
-                                    <div className="container-fluid">
-                                        <div className="row">
-                                            <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text animated fadeInUp" style={{ backgroundImage: 'url(images/img_bg_2.jpg)'}}>
-                                                <div className="slider-text-inner">
-                                                    <div className="desc">
-                                                        <h1>I am <br />a Designer</h1>
-                                                        <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
-                                                        <p><a className="btn btn-primary btn-learn">View Portfolio <i className="icon-briefcase3"></i></a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+
                             </ul>
-                         </div>
+                        </div>
                     </section>
                 </div>
             </div>
