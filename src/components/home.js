@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import  image  from '../images/TP.jpg';
 import  img  from '../images/Thabiso.png';
+import  imgs  from '../images/img_bg_1.jpg';
 export class Home extends Component {
     render() {
         return (
@@ -45,7 +46,7 @@ export class Home extends Component {
                     <section id="colorlib-hero" className="js-fullheight" data-section="home" >
                         <div className="flexslider js-fullheight">
                             <ul className="slides">
-                                <li style={{ backgroundImage: `url(${img})` }} >
+                                <li style={{ backgroundImage: `url(${img})` }} Id="background-image" >
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">
@@ -61,8 +62,8 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </li>
-                                <li style={{ backgroundImage: `url(${img})`, width: "100%", float: "left", position: "relative", opacity: 0,  display:"block" }} className="flex-active-slide" >
-                                    
+                                <li style={{ backgroundImage: `url(${imgs})`}} Id="background-image" className="flex-active-slide" >
+               
                                     <div className="overlay"></div>
                                     <div className="container-fluid">
                                         <div className="row">
